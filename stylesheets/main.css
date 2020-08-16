@@ -1,43 +1,100 @@
 body {
-    margin: 60px auto;
-    width: 70%;
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	color: #333;
 }
-nav ul, footer ul {
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
-    padding: 0px;
-    list-style: none;
-    font-weight: bold;
+
+span{
+	font-size: 14px;
+	color: #000;
+	transition: 0.3s;
 }
-nav ul li, footer ul li {
-    display: inline;
-    margin-right: 20px;
+
+img{
+	width: 70px;
+	border-radius: 35px;
+	margin: 10px 15px 0 0;
 }
+
+table {
+	margin: 0;
+	float: right;
+}
+
+table tr td:first-child {
+	padding-right: 5px;
+}
+
 a {
-    text-decoration: none;
-    color: #999;
+	text-decoration: none;
+	color: #000;
+	font-weight: bold;
+	transition: 0.3s;
 }
+
 a:hover {
-    text-decoration: underline;
-}
-h1 {
-    font-size: 3em;
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
-}
-p {
-    font-size: 1.5em;
-    line-height: 1.4em;
-    color: #333;
-}
-footer {
-    border-top: 1px solid #d5d5d5;
-    font-size: .8em;
+	color: #1A6DBB;
+	transition: 0.3s;
 }
 
-ul.posts { 
-    margin: 20px auto 40px; 
-    font-size: 1.5em;
+::-moz-selection {
+	color: white; 
+	background: #1A6DBB;
 }
 
-ul.posts li {
-    list-style: none;
+::selection {
+	color: white; 
+	background: #1A6DBB;
+}
+
+.content {
+	max-width: 600px;
+	margin: 0 auto;
+}
+
+.intro {
+	margin: 150px 0 90px 0;
+	text-align: center;
+}
+
+.intro span {
+	margin-bottom: 10px;
+	font-size: 22px;
+	line-height: 40px;
+}
+
+.intro span.highlight {
+	background-color: #333;
+	color: white;
+}
+
+.intro span.highlight-red {
+	background-color: darkred;
+	color: white;
+	transition: 0.3s;
+}
+
+.intro span.highlight-red:hover {
+	background-color: red;
+	color: white;
+	transition: 0.3s;
+}
+
+@media (max-width: 360px) {
+	.intro {
+		margin: 50px 0 50px 0;
+	}
+	
+	.intro span {
+		font-size: 18px;
+		line-height: 28px;
+	}
+	
+	img{
+		display: none;
+	}
+	
+	table {
+		float: none;
+	}
 }
